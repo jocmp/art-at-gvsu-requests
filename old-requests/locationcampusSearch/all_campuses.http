@@ -1,0 +1,2 @@
+GET {{GALLERY_BASE_URL}}/locationcampusSearch?q=*
+content-type: application/json

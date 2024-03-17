@@ -1,0 +1,3 @@
+# Multiple sub-locations and artworks
+GET {{GALLERY_BASE_URL}}/locationDetail?id=35
+content-type: application/json

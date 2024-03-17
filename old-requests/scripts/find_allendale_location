@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+
+name = ARGV[0]
+
+if !name
+  puts "Enter a location name"
+  exit(0)
+end
+
+formatted_name = name
+
+child_location_id = "4;5;6;8;9;11;12;14;15;16;17;18;19;22;24;26;28;29;30;31;32;33;34;35;36;37;38;39;40;52;54;55;56;58;59;60;61;62;63;64;65;66;67;69;70;71;72;73;74;75;76;77;78;83;88;244;247;248;255;296;315;474;605;629;638;646;1630"
+child_location_name = "Thomas J. and Marcia J. Haas Center for Performing Arts;Alumni House;Au Sable Hall;Calder Art Center;Children's Enrichment Center;Cook-Dewitt Center;The Commons;Copeland Living Center;Calder Residence;Central Utilities Building;DeVos Living Center;Fieldhouse;Edward J. Frey Living Center;Grand Valley Apartments;Arthur C. Hills Living Center;Henry Hall;Maple Living Center;Kirkhof Center;Kistler Living Center;Kleiner Commons;Lake Huron Hall;Lake Michigan Hall;Lake Ontario Hall;Lake Superior Hall;Loutit Lecture Halls;Laker Village Apartments;Mackinac Hall;Manitou Hall;Meadows Club House;Murray Living Center;Weed Living Center;Hoobler Living Center;North Living Center C;Niemeyer Living Center East;Niemeyer Living Center West;Oak Living Center;The Seymour & Esther Padnos Hall of Science;Pickard Living Center;Pew Living Center;Ravine Apartments Center;Robinson Living Center;Ronald F. VanSteeland Living Center;Service Building;Seidman House;Seidman Living Center;Stafford Living Center;Student Services Building;South Utilities Building;Swanson Living Center;Kelly Family Sports Center Louis Track And Field;Johnson Living Center;Ott Living Center;Pine Living Center;Glenn A. Niemeyer Honors Hall;Recreation Center;The Connection;South Apartment C;South Apartment E;South Apartment D;Art Gallery Support Facility;Kirkpatrick Living Center (KRP);Mary Idema Pew Library Learning and Information Commons;Zumberge Administration (JHZ);P. Douglas Kindschi Hall of Science;Campus Health Center;Holton-Hooker Learning and Living Center;Jamie Hosford Football Center"
+
+ids = child_location_id.split(";")
+names = child_location_name.split(";")
+
+names_to_ids = names.zip(ids).to_h
+pair = names_to_ids.find { |name, id| name.downcase.include?(formatted_name) }
+
+puts pair

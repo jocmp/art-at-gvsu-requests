@@ -1,0 +1,2 @@
+GET {{GALLERY_BASE_URL}}/objectDetail?id=255
+content-type: application/json

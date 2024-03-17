@@ -1,0 +1,2 @@
+GET {{GALLERY_BASE_URL}}/entityDetail?id=105
+content-type: application/json

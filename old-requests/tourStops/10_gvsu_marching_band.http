@@ -1,0 +1,2 @@
+GET {{GALLERY_BASE_URL}}/tourstopsDetail?id=10
+content-type: application/json

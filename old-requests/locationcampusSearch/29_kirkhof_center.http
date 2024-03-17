@@ -1,0 +1,2 @@
+GET {{GALLERY_BASE_URL}}/locationDetail?id=29
+content-type: application/json

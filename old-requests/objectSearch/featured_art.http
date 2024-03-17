@@ -1,0 +1,2 @@
+GET {{GALLERY_BASE_URL}}/objectSearch?q=featured_art
+content-type: application/json
