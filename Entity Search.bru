@@ -1,0 +1,25 @@
+meta {
+  name: Entity Search
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{base_url}}/entitySearch?q=alten
+  body: none
+  auth: none
+}
+
+params:query {
+  q: alten
+}
+
+docs {
+  # Entity Detail
+  
+  Returns search results for artists (entities). Results will match on the artist's name, for example `q=alten` will return results for "Alten, Mathias Joseph" as well as related artists whose biographies mention Alten.
+  
+  | Param | Description |
+  | ----- | ----------- |
+  | `q`  | Case-insensitive string matching an artist name |
+}

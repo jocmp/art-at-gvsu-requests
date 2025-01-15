@@ -1,0 +1,25 @@
+meta {
+  name: Tour Stop Detail
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{base_url}}/tourstopsDetail?id=7
+  body: none
+  auth: none
+}
+
+params:query {
+  id: 7
+}
+
+docs {
+  # Tour Search
+  
+  Returns information for a given tour stop. For example `id=1` will return information about "Eldred Sculpture" along with its object information.
+  
+  | Param | Description |
+  | ----- | ----------- |
+  | `id`  | Tour Stop ID |
+}

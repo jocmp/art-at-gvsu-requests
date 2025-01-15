@@ -1,0 +1,25 @@
+meta {
+  name: Entity Detail
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{base_url}}/entityDetail?id=637
+  body: none
+  auth: none
+}
+
+params:query {
+  id: 637
+}
+
+docs {
+  # Entity Detail
+  
+  Returns details about a given artist (entity). This includes information such as their display name, biograph and related objects.
+  
+  | Param | Description |
+  | ----- | ----------- |
+  | `id`  | Entity ID. The ID 637 for example will return information about Joseph Mathias Alten |
+}

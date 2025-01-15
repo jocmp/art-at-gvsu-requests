@@ -1,0 +1,25 @@
+meta {
+  name: Location Search
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{base_url}}/locationcampusSearch?q=*
+  body: none
+  auth: none
+}
+
+params:query {
+  q: *
+}
+
+docs {
+  # Location Campus Search
+  
+  Returns all locations for the gallery.
+  
+  | Param | Description |
+  | ----- | ----------- |
+  | `q`   | Search string such as "Allendale" or `*` to return all campuses |
+}

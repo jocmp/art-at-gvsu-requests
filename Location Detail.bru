@@ -1,0 +1,25 @@
+meta {
+  name: Location Detail
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{base_url}}/locationDetail?id=29
+  body: none
+  auth: none
+}
+
+params:query {
+  id: 29
+}
+
+docs {
+  # Location Detail
+  
+  Details about a given location like "Allendale" or a given building such as "Kirkof Center." Top-level locations encode a list their child locations in the `child_location_id` entry.
+  
+  | Param | Description |
+  | ----- | ----------- |
+  | `id` | Location ID |
+}

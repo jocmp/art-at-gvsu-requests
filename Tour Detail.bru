@@ -1,0 +1,25 @@
+meta {
+  name: Tour Detail
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{base_url}}/tourDetail?id=2
+  body: none
+  auth: none
+}
+
+params:query {
+  id: 2
+}
+
+docs {
+  # Tour Search
+  
+  Returns information on a given tour. For example `id=2` will return information about "GVSU Favorites (Allendale)."
+  
+  | Param | Description |
+  | ----- | ----------- |
+  | `id`  |   Tour ID   |
+}

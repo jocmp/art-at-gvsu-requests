@@ -1,0 +1,25 @@
+meta {
+  name: Tour Search
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{base_url}}/tourSearch?q=*
+  body: none
+  auth: none
+}
+
+params:query {
+  q: *
+}
+
+docs {
+  # Tour Search
+  
+  Returns a collection of tours including their tour stop IDs and names.
+  
+  | Param | Description |
+  | ----- | ----------- |
+  | `q`   | String. The `*` symbol will return all available tours. |
+}
