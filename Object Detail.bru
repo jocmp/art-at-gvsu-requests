@@ -1,0 +1,25 @@
+meta {
+  name: Object Detail
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{base_url}}/objectDetail?id=3818
+  body: none
+  auth: none
+}
+
+params:query {
+  id: 3818
+}
+
+docs {
+  # Object Detail
+  
+  `/objectDetail` returns all information about a given artwork.
+  
+  | Param | Description |
+  | ----- | ----------- |
+  | `id`  | Unique ID for an artwork. | 
+}

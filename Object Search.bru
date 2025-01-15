@@ -1,0 +1,25 @@
+meta {
+  name: Object Search
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{base_url}}/objectSearch?q=featured_art
+  body: none
+  auth: none
+}
+
+params:query {
+  q: featured_art
+}
+
+docs {
+  # Object Search
+  
+  `/objectSearch` is the search endpoint for all artworks (objects) in the Gallery.
+  
+  | Param | Description |
+  | ----- | ----------- |
+  | `q`   | Free text matching the name of an artwork or a collection slug such as `featured_art`.
+}
